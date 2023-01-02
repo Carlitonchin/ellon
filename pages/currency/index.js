@@ -17,7 +17,6 @@ export async function getServerSideProps() {
   }
 
 export default ({data})=>{
-     
     const [base, setBase] = useState("USD")
     const [selected, setSelected] = useState([])
     const [showCurrencies, setShowCurrencies] = useState(true)
@@ -35,9 +34,15 @@ export default ({data})=>{
         setBase(e.target.value)
     }
 
+    if(!data.currencies){
+        return <div className="container">
+            <h1>Ocorreu um erro, tente novamente</h1>
+        </div>
+    }
+
     return <div className="container">
     <h1>Selecione a moeda base</h1>
-    <select onChange={e=>setBase(e.target.value)} className="custom-select">
+    <select onChange={changeBase} className="custom-select">
         {Object.keys(data.currencies).map(currency=>{
             if(base == currency)
                 return <option selected value={currency}>{data.currencies[currency]} ({currency})</option>
