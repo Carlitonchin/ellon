@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import style from './styles/convert.module.css'
+import style from '../styles/components/convert.module.css'
 
 export default ({price}) =>{
     const [btc, setBtc] = useState(1)
@@ -20,7 +20,7 @@ export default ({price}) =>{
         let new_btc = new_fiat/value
 
         setFiat(new_fiat)
-        setBtc(parseFloat(new_btc.toFixed(2)))
+        setBtc(parseFloat(new_btc.toFixed(7)))
     }
 
     function changeSelect(e){
