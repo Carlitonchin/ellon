@@ -30,6 +30,11 @@ export default ({data})=>{
         setSelected(selected.filter(e=>e != currency))
     }
 
+    function changeBase(e){
+        setSelected(selected.filter(e != e.target.value))
+        setBase(e.target.value)
+    }
+
     return <div className="container">
     <h1>Selecione a moeda base</h1>
     <select onChange={e=>setBase(e.target.value)} className="custom-select">
@@ -80,7 +85,7 @@ export default ({data})=>{
         </div>
     </div>
 
-        <a className="primary-button">Continuar</a>
+        <a href={`/currency/report?source=${base}&currencies=${selected.join(",")}`} className="primary-button">Continuar</a>
 
     </div>
 }

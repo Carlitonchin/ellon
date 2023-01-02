@@ -45,3 +45,16 @@
     background-size: auto 75%;
   }
 
+.primary-button{
+  background: var(--primary-color);
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.primary-button:hover{
+  background: var(--primary-hover);
+}
