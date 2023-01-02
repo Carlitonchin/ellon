@@ -1,3 +1,4 @@
+import Convert from './convert'
 import style from './styles/bitcoin.module.css'
 
 function Component({price, variation}){
@@ -25,6 +26,7 @@ function Component({price, variation}){
            
             
         </div>
+        <Convert price={price}/>
     </>
 }
 
