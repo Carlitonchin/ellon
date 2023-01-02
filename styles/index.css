@@ -12,3 +12,18 @@
 .container:last-child{
     margin-bottom: 0;
 }
+
+  .custom-input {
+    width: 8rem;
+    height: 3rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+
+  .custom-input::-webkit-inner-spin-button,
+  .custom-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
