@@ -41,19 +41,19 @@
 
 .non_selected{
 
-    background-color: greenyellow;
+    background-color: rgb(141, 223, 19);
 }
 
 .non_selected:hover{
-    background-color: rgb(153, 221, 51);
+    background-color: rgb(167, 250, 43);
 }
 
 .selected{
-    background-color: red;
+    background-color: rgb(234, 19, 19);
 }
 
 .selected:hover{
-    background-color: rgb(218, 37, 37);
+    background-color: rgb(255, 20, 20);
 }
 
 .sign{
