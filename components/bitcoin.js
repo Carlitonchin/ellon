@@ -15,7 +15,7 @@ function Component({price, variation}){
                         value = price["USD"]["last"]
 
                     return  <div className={style.bar_container}>
-                    <div className={style.bar_value}>{value}</div>
+                    <p className={style.bar_value}>{value} USD</p>
                     <div className={style.bar} style={{height:`${(element['y']/price["USD"]['last'])*25}rem`}}>
                        
                     </div>
