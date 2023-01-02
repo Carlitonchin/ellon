@@ -1,0 +1,57 @@
+.price{
+    color: var(--money-color);
+}
+
+.currency{
+    font-size: smaller;
+    color: var(--currency-color);
+}
+
+.graph{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.bar_container{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.bar_container:first-child{
+   margin-right: 0;
+}
+
+.bar_value{
+    padding: 0.5rem;
+    border-radius: 5px;
+    background: black;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: -35px;
+    display: none;
+}
+
+.bar{
+    width: 3rem;
+    background-color: var(--money-color);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.bar_container:hover > .bar_value{
+    display: block;
+} 
+
+.number_bar{
+    margin-top: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: gainsboro;
+}
