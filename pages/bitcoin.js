@@ -1,8 +1,19 @@
-import Convert from './convert'
-import style from './styles/bitcoin.module.css'
+import Convert from '../components/convert'
+import style from '../styles/bitcoin.module.css'
 
-function Component({price, variation}){
-    return <>
+export async function getServerSideProps() {
+    // Fetch data from external API
+    const res_price = await fetch('https://api.blockchain.info/ticker')
+    const res_var = await fetch('https://api.blockchain.info/charts/market-price?timespan=6days&format=json')
+  
+    const price = await res_price.json()
+    const variation = await res_var.json()
+  
+    return { props: {price, variation}   }
+  }
+
+export default ({price, variation})=>{
+    return <div className='container'>
         <h1><span className={style.price}>1</span> <span className={style.currency}>BTC</span>
         {" = "}
         <span className={style.price}>{price["USD"]['last']}</span> <span className={style.currency}>USD</span>
@@ -27,9 +38,5 @@ function Component({price, variation}){
             
         </div>
         <Convert price={price}/>
-    </>
+    </div>
 }
-
-
-
-export default Component
