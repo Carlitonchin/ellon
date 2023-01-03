@@ -15,7 +15,7 @@ footer{
 
 footer > .icons{
     display: flex;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -24,6 +24,10 @@ footer > .icons{
 footer > .icons > .icon{
     
     margin-left: 1rem;
+}
+
+footer > .icons:first-child{
+    margin-left: 0;
 }
 
 .icon > svg{
