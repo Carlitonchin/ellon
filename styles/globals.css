@@ -2,8 +2,8 @@
 :root {
     --money-color: #06d6a0;
     --currency-color: #606c38;
-    --primary-color:#7b2cbf;
-    --primary-hover:#9331e9;
+    --primary-color:gold;
+    --primary-hover:rgb(255, 231, 92);
     --gold-color:#FFD700;
   }
 
@@ -81,7 +81,7 @@ a {
 }
 
 .primary-button{
-background: var(--primary-color);
+background: goldenrod;
 padding: 1rem;
 border-radius: 5px;
 cursor: pointer;
@@ -91,5 +91,14 @@ font-weight: bold;
 }
 
 .primary-button:hover{
-background: var(--primary-hover);
+background: rgb(237, 193, 80);
+}
+
+.secondary{
+  background: black;
+  color: white;
+}
+
+.secondary:hover{
+  background: rgb(40, 39, 39);
 }

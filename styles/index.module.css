@@ -3,7 +3,7 @@
 .container{
     padding: 18rem;
     width: fit-content;
-    
+
 }
 
 .title{
@@ -15,4 +15,10 @@
 .text{
     color:white;
     font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    margin-right: 1rem;
+    margin-top: 10rem;
 }

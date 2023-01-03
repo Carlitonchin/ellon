@@ -10,8 +10,8 @@ export default ()=>{
     <p className={style.text}>Use nossas ferramentas online e torne-se um trader profissional</p>
 
     <div className={style.container_buttons}>
-      <Link className='primary-button' href="/bitcoin">Explore os dados de Bitcoin</Link>
-      <Link className='primary-button' href="/currency">Conheça o mercado das moedas fiat</Link>
+      <Link className={'primary-button ' + style.button} href="/bitcoin">Explore os dados de Bitcoin</Link>
+      <Link className={'primary-button secondary ' + style.button } href="/currency">Conheça o mercado das moedas fiat</Link>
     </div>
   </div>
 }
