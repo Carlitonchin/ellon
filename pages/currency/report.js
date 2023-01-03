@@ -40,7 +40,7 @@ const Report = ({data})=>{
         {Object.keys(data.quotes).map(c=>{
             let money = data.quotes[c] * cant
             money = money.toFixed(3)
-            return <div className={style.single_quote}>
+            return <div key={c} className={style.single_quote}>
                <h2>{money}</h2> <h2 className={style.currency}>{c.substring(data.source.length)}</h2>
             </div>
         })}
