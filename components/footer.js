@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default ()=>{
     return <footer>
-            <h3 className="logo">Ellon<span>BANK</span></h3>
+            <h3 className="logo logo-footer">Ellon<span>BANK</span></h3>
 
             <div className="icons">
                 <Link className="icon" target={"_blank"} href="mailto:carlozalejandro98@gmail.com">
