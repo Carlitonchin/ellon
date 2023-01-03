@@ -10,4 +10,28 @@ footer{
     color: white;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+footer > .icons{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .icons > .icon{
+    
+    margin-left: 1rem;
+}
+
+.icon > svg{
+    width: 2.2rem;
+    height: 2.2rem;
+    fill: white;
+}
+
+.icon:hover > svg{
+    fill: gold;
 }

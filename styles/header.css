@@ -19,15 +19,17 @@ nav{
     font-family: 'Yeon Sung', cursive;
     font-size: 4rem;
     transition: 300ms ease-in-out;
-    cursor: pointer;
-    color: white;
 }
 
 .logo > span{
     color: gold;
 }
 
-.logo:hover{
+.nav > .logo{
+    cursor: pointer;
+}
+
+nav > .logo:hover{
     font-size: 4.1rem;
 }
 
