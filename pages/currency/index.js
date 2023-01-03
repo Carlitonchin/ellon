@@ -44,9 +44,9 @@ const Currency = ({data})=>{
     <select onChange={changeBase} className="custom-select">
         {Object.keys(data.currencies).map(currency=>{
             if(base == currency)
-                return <option selected value={currency}>{data.currencies[currency]} ({currency})</option>
+                return <option key={currency} selected value={currency}>{data.currencies[currency]} ({currency})</option>
 
-            return <option value={currency}>{data.currencies[currency]} ({currency})</option>
+            return <option key={currency} value={currency}>{data.currencies[currency]} ({currency})</option>
         })}
     </select>
 
@@ -67,7 +67,7 @@ const Currency = ({data})=>{
                 if(currency == base)
                     return
                 
-                return <div onClick={()=>addCurrency(currency)} className={style.single_currency + " " + style.non_selected}>
+                return <div key={currency} onClick={()=>addCurrency(currency)} className={style.single_currency + " " + style.non_selected}>
                     {currency}
                     <p className={style.sign}>+</p>
                 </div>
@@ -79,7 +79,7 @@ const Currency = ({data})=>{
         <div className={style.list}>
             {!selected.length ? <p className={style.text}>Não tem</p> 
         : selected.map(currency=>{
-            return <div onClick={()=>removeCurrency(currency)} className={style.single_currency + " " + style.selected}>
+            return <div key={currency} onClick={()=>removeCurrency(currency)} className={style.single_currency + " " + style.selected}>
                    {currency}
                     <p className={style.sign}>-</p>
                 </div>
