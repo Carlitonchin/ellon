@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 .container{
-    padding: 18rem;
+    padding-left: 18rem;
     width: fit-content;
+    align-items: flex-start;
+    justify-content: center;
+}
 
+.container>*{
+    margin: 0;
 }
 
 .title{
     font-size: 3.2rem;
     font-family: 'Courgette', cursive;
     width: fit-content;
+    margin-top: -10rem;
 }
 
 .text{

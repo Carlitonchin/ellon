@@ -1,6 +1,5 @@
 header{
 
-border-bottom: 1px solid rgba(255, 255, 255, 0.057);
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,6 +20,7 @@ nav{
     font-size: 4rem;
     transition: 300ms ease-in-out;
     cursor: pointer;
+    color: white;
 }
 
 .logo > span{

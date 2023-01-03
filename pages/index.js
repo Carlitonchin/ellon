@@ -3,7 +3,7 @@ import style from '../styles/index.module.css'
 
 export default ()=>{
 
-  return <div className={style.container}>
+  return <div className={"container " + style.container}>
   <h1 className={style.title}>
       O Trading é mais fácil com dados</h1>
 

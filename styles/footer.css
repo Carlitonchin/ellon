@@ -1,5 +1,13 @@
 footer{
-    height: 8vh;
-    min-height: 60px;
+    height: 10vh;
+    min-height: 70px;
     background-color: rgba(185, 185, 185, 0.443);
+    background: url('../public/images/wave.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
 }
