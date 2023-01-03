@@ -27,7 +27,7 @@ html{
 body {
   max-width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
+  /*overflow-x: hidden;*/
   background: linear-gradient(to right, #5268e8e4, #374dcce6, #5875f9e6), url("../public/images/bank.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -44,6 +44,7 @@ a {
 
 .container{
   padding: 3rem;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
