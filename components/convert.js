@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import style from '../styles/components/convert.module.css'
 
-export default ({price}) =>{
+const Convert = ({price}) =>{
     const [btc, setBtc] = useState(1)
     const [fiat, setFiat] = useState(price["USD"]["last"])
     const [currency_selected, setCurrency] = useState("USD")
@@ -48,3 +48,5 @@ export default ({price}) =>{
         </div>
     </>
 }
+
+export default Convert
