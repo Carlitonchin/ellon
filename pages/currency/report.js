@@ -1,4 +1,4 @@
-import { useRouter } from "next/router"
+import Link from "next/link"
 import { useState } from "react"
 import style from '../../styles/report.module.css'
 
@@ -26,15 +26,25 @@ export default ({data})=>{
     if(!data){
         return <div className="container">
         <h1>Houve algum erro</h1>
-        <a className="primary-button" href="/currency">Voltar</a>
+        <Link className="primary-button" href="/currency">Voltar</Link>
         </div>
     }
 
     const [cant, setCant] = useState(1)
-
+    console.log(data)
     return <div className="container">
     <div className={style.first_text}>
         Quanto custa <input onInput={e=>setCant(e.target.value)} value={cant} type="number" min="0" className={"custom-input " + style.input}/> {data.source}
+    </div>
+    <div className={style.container_quotes}>
+        {Object.keys(data.quotes).map(c=>{
+            let money = data.quotes[c] * cant
+            money = money.toFixed(3)
+            return <div className={style.single_quote}>
+               <h2>{money}</h2> <h2 className={style.currency}>{c.substring(data.source.length)}</h2>
+            </div>
+        })}
+        
     </div>
     </div>
 }

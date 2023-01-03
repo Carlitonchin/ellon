@@ -8,3 +8,18 @@
     font-weight: bold;
     text-align: center;
 }
+
+.single_quote{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.single_quote > *{
+    width: 12rem;
+    text-align: end;
+}
+
+.currency{
+    margin: 0;
+    text-align: center;
+}

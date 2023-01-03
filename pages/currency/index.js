@@ -2,7 +2,6 @@ import { useState } from "react"
 import style from '../../styles/currency.module.css'
 
 export async function getServerSideProps() {
-    // Fetch data from external API
     const res = await fetch('https://api.apilayer.com/currency_data/list', 
     {
         headers:{
@@ -30,7 +29,7 @@ export default ({data})=>{
     }
 
     function changeBase(e){
-        setSelected(selected.filter(e != e.target.value))
+        setSelected(selected.filter(s=> s != e.target.value))
         setBase(e.target.value)
     }
 
