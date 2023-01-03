@@ -24,7 +24,7 @@ nav{
 
 .logo{
     font-family: 'Yeon Sung', cursive;
-    font-size: 4rem;
+    font-size: 3rem;
     transition: 300ms ease-in-out;
 }
 
@@ -37,7 +37,7 @@ nav{
 }
 
 nav > .logo:hover{
-    font-size: 4.1rem;
+    font-size: 3.1rem;
 }
 
 nav > *{
