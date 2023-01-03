@@ -82,6 +82,7 @@ ul > li:hover{
     font-weight: bold;
     color: white;
     text-align: center;
+    align-items: center;
     background-color: black;
     border-bottom-left-radius: 15px;
    transition: 500ms ease-in-out;
@@ -96,6 +97,7 @@ ul > li:hover{
 
 .menu-mobile > *{
     display: none;
+    width: fit-content;
     transition: 800ms ease-in-out;
 }
 

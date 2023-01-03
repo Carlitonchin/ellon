@@ -35,7 +35,7 @@ const Header = ({routes, currentPage})=>{
         window.addEventListener('click', (e)=>{
             setTimeout(()=>{
                 if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
-                close_menu_if_possible()
+                    close_menu_if_possible()
             }, 500)
             
         })
