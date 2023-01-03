@@ -15,7 +15,7 @@ export async function getServerSideProps() {
     return { props: {data}   }
   }
 
-export default ({data})=>{
+const Currency = ({data})=>{
     const [base, setBase] = useState("USD")
     const [selected, setSelected] = useState([])
     const [showCurrencies, setShowCurrencies] = useState(true)
@@ -93,3 +93,5 @@ export default ({data})=>{
 
     </div>
 }
+
+export default Currency
