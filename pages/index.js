@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import style from '../styles/index.module.css'
 
-export default ()=>{
+const Index = ()=>{
 
   return <div className={"container " + style.container}>
   <h1 className={style.title}>
@@ -15,3 +15,5 @@ export default ()=>{
     </div>
   </div>
 }
+
+export default Index
