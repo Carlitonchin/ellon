@@ -81,17 +81,17 @@ ul > li:hover{
     font-size: x-large;
     font-weight: bold;
     color: white;
-    padding: 3rem;
     text-align: center;
     background-color: black;
     border-bottom-left-radius: 15px;
-   transition: 800ms ease-in-out;
+   transition: 500ms ease-in-out;
    max-width: 100vw;
    height: 0;
    padding: 0;
    position: absolute;
    z-index: 5;
    right: 0;
+   width: 60vw;
 }
 
 .menu-mobile > *{
@@ -101,11 +101,13 @@ ul > li:hover{
 
 .show-menu-mobile{
     height: 35vh;
-    width: 60vw;
     transition: 800ms ease-in-out;
+    padding: 3rem;
+    
 }
 
-.show-options{
+.show-menu-mobile > *{
+    transition: 800ms ease-in-out;
     display: block;
 }
 

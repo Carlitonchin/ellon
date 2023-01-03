@@ -8,11 +8,6 @@ const Header = ({routes, currentPage})=>{
 
         if(menu_mobile.classList.contains('show-menu-mobile')){
             menu_mobile.classList.remove('show-menu-mobile')
-
-            menu_mobile.childNodes.forEach(e=>{
-                e.classList.remove('show-options')
-            })
-            
             return true
         }
 
@@ -24,12 +19,6 @@ const Header = ({routes, currentPage})=>{
 
         if(!menu_mobile.classList.contains('show-menu-mobile')){
             menu_mobile.classList.add('show-menu-mobile')
-
-            setTimeout(()=>{
-                menu_mobile.childNodes.forEach(e=>{
-                    e.classList.add('show-options')
-                })
-            }, 300)
 
             return true
     }
@@ -44,8 +33,10 @@ const Header = ({routes, currentPage})=>{
 
     useEffect(()=>{
         window.addEventListener('click', (e)=>{
-            if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
+            setTimeout(()=>{
+                if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
                 close_menu_if_possible()
+            }, 500)
             
         })
     })
