@@ -22,7 +22,7 @@ export async function getServerSideProps({query}) {
     return { props: {data}   }
 }
 
-export default ({data})=>{
+const Report = ({data})=>{
     if(!data){
         return <div className="container">
         <h1>Houve algum erro</h1>
@@ -31,7 +31,7 @@ export default ({data})=>{
     }
 
     const [cant, setCant] = useState(1)
-    
+
     return <div className="container">
     <div className={style.first_text}>
         Quanto custa <input onInput={e=>setCant(e.target.value)} value={cant} type="number" min="0" className={"custom-input " + style.input}/> {data.source}
@@ -50,3 +50,5 @@ export default ({data})=>{
     <Link className={"primary-button " + style.button} href="/currency">Fazer mais outro reporte</Link>
     </div>
 }
+
+export default Report
