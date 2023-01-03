@@ -36,7 +36,7 @@ const Header = ({routes, currentPage})=>{
             setTimeout(()=>{
                 if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
                     close_menu_if_possible()
-            }, 500)
+            }, 200)
             
         })
     })
