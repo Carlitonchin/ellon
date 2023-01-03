@@ -20,6 +20,8 @@
     display: flex;
     margin-top: 1rem;
     width: 35rem;
+    max-width: 100%;
+    overflow-x: scroll;
     border-bottom: 1px solid gold;
     justify-content: center;
 }
