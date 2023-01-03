@@ -1,0 +1,29 @@
+header{
+
+    background-color: rgba(220, 220, 220, 0.061);
+    -webkit-box-shadow: 0px -27px 51px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -27px 51px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px -27px 51px 1px rgba(0,0,0,0.75);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    min-height: 60px;
+    padding: 2rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+nav > *{
+    width: 50%;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: x-large;
+    font-weight: bold;
+}

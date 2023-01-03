@@ -3,6 +3,7 @@
     --currency-color: #606c38;
     --primary-color:#7b2cbf;
     --primary-hover:#9331e9;
+    --gold-color:#FFD700;
   }
 
 
@@ -15,7 +16,13 @@
 html,
 body {
   max-width: 100vw;
+  min-height: 100vh;
   overflow-x: hidden;
+  background: linear-gradient(to right, #5268e8e4, #374dcce6, #5875f9e6), url("../public/images/bank.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: gold;
 }
 
 
