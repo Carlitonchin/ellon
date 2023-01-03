@@ -8,7 +8,7 @@ export default ({routes, currentPage})=>{
             </Link>
             <ul>
                 {Object.keys(routes).map(url=>{
-                    return <li><Link style={{color:currentPage == url ? 'gold' : ""}} href={url}>{routes[url]}</Link></li>
+                    return <li key={url}><Link style={{color:currentPage == url ? 'gold' : ""}} href={url}>{routes[url]}</Link></li>
                 
                 })}
                 
