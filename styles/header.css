@@ -45,7 +45,17 @@ nav > *{
     width: 50%;
 }
 
-ul{
+nav > .menu-icon{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
+nav > .menu-icon:active{
+    fill: gold;
+}
+
+nav > ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
@@ -56,3 +66,52 @@ ul{
 ul > li:hover{
     color: gold;
 }
+
+header > .menu-mobile{
+    position: absolute;
+    right: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+    background-color: black;
+    border-bottom-left-radius: 15px;
+    margin-right: -100%;
+}
+
+header > .menu-mobile > *{
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    nav > ul{
+        display: none;
+    }
+
+    nav > .menu-icon{
+        display: block;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    nav{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    nav{
+        padding: 1rem;
+    }
+  }
