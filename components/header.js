@@ -33,10 +33,10 @@ const Header = ({routes, currentPage})=>{
 
     useEffect(()=>{
         window.addEventListener('click', (e)=>{
-            setTimeout(()=>{
-                if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
-                    close_menu_if_possible()
-            }, 200)
+            
+            if(e.target.id != 'menu_mobile' && e.target.id != "menu_icon")
+                close_menu_if_possible()
+            
             
         })
     })
