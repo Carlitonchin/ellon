@@ -5,6 +5,7 @@ import Header from '../components/header'
 import '../styles/globals.css'
 import '../styles/header.css'
 import '../styles/footer.css'
+import Link from 'next/link'
 
 export default function App({ Component, pageProps }) {
   const path = useRouter().pathname
@@ -44,6 +45,14 @@ export default function App({ Component, pageProps }) {
 
   return <>
   <Header routes={routes} currentPage={currentPage}/>
+  <ul id="menu_mobile" className="menu-mobile">
+        
+        {Object.keys(routes).map(url=>{
+            return <li key={url}><Link style={{color:currentPage == url ? 'gold' : ""}} href={url}>{routes[url]}</Link></li>
+        
+        })}
+        
+    </ul>
   <Component {...pageProps} />
   <Footer/>
   </>

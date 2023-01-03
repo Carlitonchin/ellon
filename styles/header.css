@@ -2,9 +2,15 @@ header{
 
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 width: 100%;
+
+}
+
+.div-nav{
+    z-index: 2;
 }
 
 nav{
+    width: 100%;
     display: flex;
     align-items: center;
     height: 8vh;
@@ -67,9 +73,7 @@ ul > li:hover{
     color: gold;
 }
 
-header > .menu-mobile{
-    position: absolute;
-    right: 0;
+.menu-mobile{
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -81,10 +85,17 @@ header > .menu-mobile{
     text-align: center;
     background-color: black;
     border-bottom-left-radius: 15px;
-    margin-right: -100%;
+   transition: 1500ms ease-in-out;
+   width: 25rem;
+   right: -25rem;
+   position: absolute;
 }
 
-header > .menu-mobile > *{
+nav > .menu-icon:hover .menu-mobile{
+    display: flex;
+}
+
+.menu-mobile > *{
     margin-bottom: 2rem;
 }
 

@@ -26,7 +26,6 @@ html{
 
 body {
   max-width: 100%;
-  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
   background: linear-gradient(to right, #5268e8e4, #374dcce6, #5875f9e6), url("../public/images/bank.jpg");
