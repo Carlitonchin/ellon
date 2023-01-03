@@ -31,7 +31,7 @@ export default ({data})=>{
     }
 
     const [cant, setCant] = useState(1)
-    console.log(data)
+    
     return <div className="container">
     <div className={style.first_text}>
         Quanto custa <input onInput={e=>setCant(e.target.value)} value={cant} type="number" min="0" className={"custom-input " + style.input}/> {data.source}
@@ -46,5 +46,7 @@ export default ({data})=>{
         })}
         
     </div>
+
+    <Link className={"primary-button " + style.button} href="/currency">Fazer mais outro reporte</Link>
     </div>
 }
