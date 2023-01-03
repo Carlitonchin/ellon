@@ -3,12 +3,14 @@
     align-items: center;
 }
 
-.container > *{
-    margin-right: 0.5rem;
+.single_currency{
+    display: flex;
+    align-items: center;
 }
 
 .btc_currency{
     font-size: 1.4rem;
+    margin-left: 0.2rem;
 }
 
 .select{
@@ -20,3 +22,38 @@
 .input_fiat{
     margin-left: 2rem;
 }
+
+.input{
+    width: 15rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .input_fiat{
+        margin: 0;
+    }
+
+    .single_currency:first-child{
+        margin-bottom: 0.5rem;
+    }
+
+    .single_currency{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btc_currency{
+        width: 6.5rem;
+        text-align: center;
+    }
+
+    .input{
+        width: 25rem;
+        margin-right: 0.3rem;
+        max-width: calc(100% - 15rem - 0.3rem);
+    }
+  }

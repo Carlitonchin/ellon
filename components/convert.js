@@ -34,9 +34,12 @@ const Convert = ({price}) =>{
     return <>
         <h1>Conversor Online</h1>
         <div className={style.container}>
-        <input onInput={changeBtc} value={btc} type="number" class="custom-input" min="0"/>
+        <div className={style.single_currency}>
+        <input onInput={changeBtc} value={btc} type="number" className={"custom-input " + style.input } min="0"/>
         <h1 className={style.btc_currency}>BTC</h1>
-        <input onInput={changeFiat} value={fiat} type="number" className={"custom-input " + style.input_fiat} min="0"/>
+        </div>
+        <div className={style.single_currency}>
+        <input onInput={changeFiat} value={fiat} type="number" className={"custom-input " + style.input_fiat + " " + style.input} min="0"/>
         <select onChange={changeSelect} className={"custom-select " + style.select}>
             {Object.keys(price).map(currency=>{
                 if(currency == currency_selected)
@@ -45,6 +48,7 @@ const Convert = ({price}) =>{
                 return <option key={currency} value={currency}>{currency}</option>
             })}
         </select>
+        </div>
         </div>
     </>
 }
