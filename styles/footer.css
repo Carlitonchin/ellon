@@ -21,6 +21,12 @@ footer > .icons{
     align-items: center;
 }
 
+@media only screen and (max-width: 1500px) {
+    footer > .icons{
+        width: 55%;
+    }
+  }
+
 footer > .icons > .icon{
     
     margin-left: 1rem;
