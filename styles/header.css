@@ -96,6 +96,7 @@ ul > li:hover{
 
 .menu-mobile > *{
     display: none;
+    transition: 800ms ease-in-out;
 }
 
 .show-menu-mobile{
@@ -104,7 +105,7 @@ ul > li:hover{
     transition: 800ms ease-in-out;
 }
 
-.show-menu-mobile > *{
+.show-options{
     display: block;
 }
 
