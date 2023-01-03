@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.container{
+    padding: 18rem;
+    width: fit-content;
+    
+}
+
+.title{
+    font-size: 3.2rem;
+    font-family: 'Courgette', cursive;
+    width: fit-content;
+}
+
+.text{
+    color:white;
+    font-size: 2rem;
+}

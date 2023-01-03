@@ -15,6 +15,21 @@ nav{
     color: white;
 }
 
+.logo{
+    font-family: 'Yeon Sung', cursive;
+    font-size: 4rem;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.logo > span{
+    color: gold;
+}
+
+.logo:hover{
+    font-size: 4.1rem;
+}
+
 nav > *{
     width: 50%;
 }
@@ -25,4 +40,8 @@ ul{
     justify-content: space-evenly;
     font-size: x-large;
     font-weight: bold;
+}
+
+ul > li:hover{
+    color: gold;
 }

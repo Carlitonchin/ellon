@@ -1,14 +1,17 @@
 import Link from "next/link"
 
-export default ()=>{
+export default ({routes, currentPage})=>{
     return <header>
         <nav>
-            <h1>Logo</h1>
-
+            <Link href="/">
+            <h3 className="logo">Ellon<span>BANK</span></h3>
+            </Link>
             <ul>
-                <li><Link href="/">Inicio</Link></li>
-                <li><Link href="/bitcoin">Bitcoins</Link></li>
-                <li><Link href="/currency">Moedas Fiat</Link></li>
+                {Object.keys(routes).map(url=>{
+                    return <li><Link style={{color:currentPage == url ? 'gold' : ""}} href={url}>{routes[url]}</Link></li>
+                
+                })}
+                
             </ul>
         </nav>
     </header>
