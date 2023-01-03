@@ -121,12 +121,22 @@ nav > .menu-icon:hover .menu-mobile{
     margin-bottom: 2rem;
 }
 
+#container_menu_icon{
+    width: 4rem;
+    height: 4rem;
+    display: none;
+}
+
 @media only screen and (max-width: 1000px) {
     nav > ul{
         display: none;
     }
 
     nav > .menu-icon{
+        display: block;
+    }
+
+    #container_menu_icon{
         display: block;
     }
 
