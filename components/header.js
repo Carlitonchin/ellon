@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default ({routes, currentPage})=>{
+const Header = ({routes, currentPage})=>{
     return <header>
         <nav>
             <Link href="/">
@@ -16,3 +16,5 @@ export default ({routes, currentPage})=>{
         </nav>
     </header>
 }
+
+export default Header
