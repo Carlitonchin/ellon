@@ -57,6 +57,12 @@ a {
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .container{
+    min-height: calc(100vh - 8vh - 15vh);
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .container{
     padding: 1rem;

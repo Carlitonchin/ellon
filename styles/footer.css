@@ -27,6 +27,30 @@ footer > .icons{
     }
   }
 
+@media only screen and (max-width: 900px) {
+    footer{
+        height: 15vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        padding: 2rem;
+    }
+
+    footer > .icons{
+        width: fit-content;
+    }
+
+    footer > .logo{
+        margin-left: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    footer{
+        padding: 1rem;
+    }
+  }
+
 footer > .icons > .icon{
     
     margin-left: 1rem;
