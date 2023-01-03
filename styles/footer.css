@@ -2,7 +2,7 @@ footer{
     height: 10vh;
     min-height: 70px;
     background-color: rgba(185, 185, 185, 0.443);
-    background: url('../public/images/wave.svg');
+    background: url('/images/wave.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
