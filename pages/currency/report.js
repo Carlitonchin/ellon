@@ -35,7 +35,7 @@ const Report = ({data})=>{
 
     return <div className="container">
     <div className={style.first_text}>
-        Quanto custa <input onInput={e=>setCant(e.target.value)} value={cant} type="number" min="0" className={"custom-input " + style.input}/> {data.source}
+        <h1>Quanto custa <input onInput={e=>setCant(e.target.value)} value={cant} type="number" min="0" className={"custom-input " + style.input}/> {data.source}</h1>
     </div>
     <div className={style.container_quotes}>
         {Object.keys(data.quotes).map(c=>{
