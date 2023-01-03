@@ -39,5 +39,7 @@
     .container{
         padding: 3rem;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
   }
