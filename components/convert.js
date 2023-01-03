@@ -40,9 +40,9 @@ const Convert = ({price}) =>{
         <select onChange={changeSelect} className={"custom-select " + style.select}>
             {Object.keys(price).map(currency=>{
                 if(currency == currency_selected)
-                    return <option value={currency} selected>{currency}</option>
+                    return <option key={currency} value={currency} selected>{currency}</option>
 
-                return <option value={currency}>{currency}</option>
+                return <option key={currency} value={currency}>{currency}</option>
             })}
         </select>
         </div>
