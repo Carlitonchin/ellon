@@ -1,8 +1,10 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import Footer from '../components/footer'
 import Header from '../components/header'
 import '../styles/globals.css'
 import '../styles/header.css'
+import '../styles/footer.css'
 
 export default function App({ Component, pageProps }) {
   const path = useRouter().pathname
@@ -43,5 +45,6 @@ export default function App({ Component, pageProps }) {
   return <>
   <Header routes={routes} currentPage={currentPage}/>
   <Component {...pageProps} />
+  <Footer/>
   </>
 }
