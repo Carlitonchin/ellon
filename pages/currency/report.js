@@ -23,14 +23,15 @@ export async function getServerSideProps({query}) {
 }
 
 const Report = ({data})=>{
+
+    const [cant, setCant] = useState(1)
+    
     if(!data){
         return <div className="container">
         <h1>Houve algum erro</h1>
         <Link className="primary-button" href="/currency">Voltar</Link>
         </div>
     }
-
-    const [cant, setCant] = useState(1)
 
     return <div className="container">
     <div className={style.first_text}>
