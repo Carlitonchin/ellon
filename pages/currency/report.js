@@ -28,7 +28,7 @@ const Report = ({data})=>{
     
     if(!data){
         return <div className="container">
-        <h1>Houve algum erro</h1>
+        <h1>Por favor seleccione pelo menos uma moeda da lista</h1>
         <Link className="primary-button" href="/currency">Voltar</Link>
         </div>
     }
