@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default ()=>{
+const Footer = ()=>{
     return <footer>
             <h3 className="logo logo-footer">Ellon<span>BANK</span></h3>
 
@@ -20,3 +20,5 @@ export default ()=>{
             </div>
     </footer>
 }
+
+export default Footer
