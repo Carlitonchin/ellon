@@ -26,7 +26,7 @@ const Bitcoin = ({price, variation})=>{
                     if(index == 0)
                         value = price["USD"]["last"]
 
-                    return  <div className={style.bar_container}>
+                    return  <div key={index} className={style.bar_container}>
                     <p className={style.bar_value}>{value} USD</p>
                     <div className={style.bar} style={{height:`${(element['y']/price["USD"]['last'])*25}rem`}}>
                        
