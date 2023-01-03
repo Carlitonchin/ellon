@@ -12,7 +12,7 @@ export async function getServerSideProps() {
     return { props: {price, variation}   }
   }
 
-export default ({price, variation})=>{
+const Bitcoin = ({price, variation})=>{
     return <div className='container'>
         <h1><span className={style.price}>1</span> <span className={style.currency}>BTC</span>
         {" = "}
@@ -40,3 +40,5 @@ export default ({price, variation})=>{
         <Convert price={price}/>
     </div>
 }
+
+export default Bitcoin
